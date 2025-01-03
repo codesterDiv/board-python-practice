@@ -31,11 +31,11 @@ def main():
         while True:
             try:
                 mark = float(input(f"Enter marks for Subject {i}: "))
-                if 0 <= mark <= 100:  # Assuming marks are out of 100
+                if 0 <= mark <= 80:  # Assuming marks are out of 80
                     marks.append(mark)
                     break
                 else:
-                    print("Please enter marks between 0 and 100.")
+                    print("Please enter marks between 0 and 80.")
             except ValueError:
                 print("Invalid input. Please enter a number.")
 
